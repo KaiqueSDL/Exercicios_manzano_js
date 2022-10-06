@@ -9,16 +9,18 @@ var acumu = [];
 for (var i = 0; i < 5; i++) {
 
     var num = parseInt(entrada("Digite um numero: "));
-    
+
     acumu.push(num);
     console.log(acumu);
 
 
 }
 
-acumu.sort();
+acumu.sort(function (a, b) {
+    return a - b;
+});
 
-console.log(acumu.sort());
+
 
 console.log("primeira " + acumu[0] + "ultima " + acumu[4]);
 
@@ -53,7 +55,7 @@ console.log("primeira " + acumu[0] + "ultima " + acumu[4]);
 // for(var i = 0 ; i <3 ; i++){
 
 
-    
+
 //     console.log(acumu[i]);
 
 // }
